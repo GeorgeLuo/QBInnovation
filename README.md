@@ -23,8 +23,7 @@ genSequence(chg, root) takes a chg object and makes changes to array root.
 Example:
 
 when,
-chg = {"startIndex" : 0, "endIndex" : 4, "sequence" : 2, "bytes" : ['111', '101', '111', '011', '001']}
-root = ['0','0','0','0','0','0','0','0']
+chg = {"startIndex" : 0, "endIndex" : 4, "sequence" : 2, "bytes" : ['111', '101', '111', '011', '001']} and root = ['0','0','0','0','0','0','0','0']
 
 genSequence returns,
 ['111', '0', '101', '0', '111', '0', '011', '0']
