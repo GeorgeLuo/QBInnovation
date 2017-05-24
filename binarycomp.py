@@ -40,13 +40,18 @@ def getMismatches(filename1, filename2):
 def reduceMismatches(mismatchDex):
 	return 0
 
+# homoglyphic analysis
+def homoglyph_compare(a, b):
+	for x, y in zip(a, b):
+		if x != y:
+			print("Character mismatch %s is %s and %s is %s" % (x, ord(x), y, ord(y)))
 
 
 
 h = "testfiles/hellotest.doc"
 h2 = "testfiles/hellotest2.doc"
 
-print (getSize(h))
+# print (getSize(h))
 # print (getBytecode(h))
 # print (getBytecode(h2))
-print getMismatches(h, h2)
+# print getMismatches(h, h2)
